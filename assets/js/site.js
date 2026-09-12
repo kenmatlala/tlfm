@@ -42,10 +42,10 @@ document.addEventListener("DOMContentLoaded", () => {
             <p>Powering homes, businesses and communities with reliable solar and EV charging solutions.</p>
           </div>
           <div><div class="footer-title">QUICK LINKS</div><ul class="footer-links">${navItems.slice(0,6).map(([label,href]) => `<li><a href="${href}">${label}</a></li>`).join("")}</ul></div>
-          <div><div class="footer-title">CONTACT US</div><p>☎ +27 79 942 8006</p><p>✉ info@tlfmsolarandelectrical.co.za</p><p>⌖ Gauteng, South Africa</p></div>
+          <div><div class="footer-title">CONTACT US</div><p>☎ +27 79 942 8006</p><p>☎ +27 73 079 7046</p><p>✉ info@tlfmsolarandelectrical.co.za</p><p>⌖ Gauteng, South Africa</p></div>
           <div><div class="footer-title">FOLLOW US</div><p><a href="https://web.facebook.com/p/TLFM-Transportation-services-100063531940409/?_rdc=1&_rdr" aria-label="Facebook">Facebook</a></p><p><a href="#" aria-label="Instagram">Instagram</a></p><p><a href="#" aria-label="LinkedIn">LinkedIn</a></p></div>
         </div>
-        <div class="footer-bottom">© ${new Date().getFullYear()} TLFM Energy & Training. All rights reserved.</div>
+        <div class="footer-bottom">© ${new Date().getFullYear()} TLFM Solar and Electrical. All rights reserved.</div>
       </div>
     </footer>`;
 

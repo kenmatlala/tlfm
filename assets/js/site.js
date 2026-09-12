@@ -1,27 +1,24 @@
-
 const SITE = {
   name: "TLFM Energy & Training",
   formspreeEndpoint: "https://formspree.io/f/YOUR_FORMSPREE_ID"
 };
 
-const path = window.location.pathname.replace(/\\/g, "/");
-const inPages = path.includes("/pages/");
-const prefix = inPages ? "../" : "";
+const path = window.location.pathname;
 
 const navItems = [
-  ["HOME", `${prefix}index.html`],
-  ["SOLAR SOLUTIONS", `${prefix}pages/solar.html`],
-  ["EV CHARGERS", `${prefix}pages/ev-chargers.html`],
-  ["PROJECTS", `${prefix}pages/projects.html`],
-  ["ABOUT US", `${prefix}pages/about.html`],
-  ["CONTACT", `${prefix}pages/contact.html`]
+  ["HOME", "/"],
+  ["SOLAR SOLUTIONS", "/solar"],
+  ["EV CHARGERS", "/ev-chargers"],
+  ["PROJECTS", "/projects"],
+  ["ABOUT US", "/about"],
+  ["CONTACT", "/contact"]
 ];
 
 document.addEventListener("DOMContentLoaded", () => {
   document.querySelector("#site-header").innerHTML = `
     <header class="site-header">
       <nav class="navbar container" aria-label="Primary navigation">
-        <a class="brand" href="${prefix}index.html" aria-label="TLFM Energy & Training home">
+        <a class="brand" href="/" aria-label="TLFM Energy & Training home">
           <span class="brand-mark">☀</span>
           <span>TLFM<small>ENERGY & TRAINING</small></span>
         </a>
@@ -29,7 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
         <ul class="nav-links">
           ${navItems.map(([label, href]) => `<li><a href="${href}">${label}</a></li>`).join("")}
         </ul>
-        <a class="btn btn-primary" href="${prefix}pages/contact.html">GET A QUOTE</a>
+        <a class="btn btn-primary" href="/contact">GET A QUOTE</a>
       </nav>
     </header>`;
 
@@ -38,7 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
       <div class="container">
         <div class="footer-grid">
           <div>
-            <a class="brand" href="${prefix}index.html"><span class="brand-mark">☀</span><span>TLFM<small>ENERGY & TRAINING</small></span></a>
+            <a class="brand" href="/"><span class="brand-mark">☀</span><span>TLFM<small>ENERGY & TRAINING</small></span></a>
             <p>Powering homes, businesses and communities with reliable solar and EV charging solutions.</p>
           </div>
           <div><div class="footer-title">QUICK LINKS</div><ul class="footer-links">${navItems.slice(0,6).map(([label,href]) => `<li><a href="${href}">${label}</a></li>`).join("")}</ul></div>
@@ -59,7 +56,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Mark active navigation link.
   document.querySelectorAll(".nav-links a").forEach(a => {
     const href = a.getAttribute("href");
-    const current = path.endsWith(href.replaceAll("../", "")) || (href.endsWith("index.html") && (path.endsWith("/") || path.endsWith("/index.html")));
+    const current = href === path || (href === "/" && path === "/index.html");
     if (current) a.classList.add("active");
   });
 

@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
     <header class="site-header">
       <nav class="navbar container" aria-label="Primary navigation">
         <a class="brand" href="/" aria-label="TLFM Solar & Electrical home">
-          <img src="${prefix}assets/images/TLFM_nav_logo.svg" alt="TLFM Solar & Electrical">
+          <img src="assets/images/TLFM_nav_logo.svg" alt="TLFM Solar & Electrical">
         </a>
         <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
         <ul class="nav-links">
@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", () => {
       <div class="container">
         <div class="footer-grid">
           <div>
-            <a class="brand" href="/" aria-label="TLFM Solar & Electrical home"><img src="${prefix}assets/images/TLFM_nav_logo.svg" alt="TLFM Energy"></a>
+            <a class="brand" href="/" aria-label="TLFM Solar & Electrical home"><img src="assets/images/TLFM_nav_logo.svg" alt="TLFM Energy"></a>
             <p>Powering homes, businesses and communities with reliable solar and EV charging solutions.</p>
           </div>
           <div><div class="footer-title">QUICK LINKS</div><ul class="footer-links">${navItems.slice(0,6).map(([label,href]) => `<li><a href="${href}">${label}</a></li>`).join("")}</ul></div>

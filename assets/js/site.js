@@ -1,6 +1,6 @@
 const SITE = {
   name: "TLFM Solar & Electrical",
-  formspreeEndpoint: "https://formspree.io/f/YOUR_FORMSPREE_ID"
+  formspreeEndpoint: "https://formspree.io/f/xgaejnae"
 };
 
 const path = window.location.pathname;

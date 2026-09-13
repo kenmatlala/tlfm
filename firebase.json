@@ -10,7 +10,7 @@
     ],
     "rewrites": [
       { "source": "/about", "destination": "/pages/about.html" },
-      { "source": "/solar-solutions", "destination": "/pages/solar-solutions.html" },
+      { "source": "/solar-solutions", "destination": "/pages/solar.html" },
       { "source": "/ev-chargers", "destination": "/pages/ev-chargers.html" },
       { "source": "/projects", "destination": "/pages/projects.html" },
       { "source": "/contact", "destination": "/pages/contact.html" }

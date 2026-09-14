@@ -70,8 +70,12 @@ p{color:var(--muted)}
 .cards-2{grid-template-columns:repeat(2,1fr);max-width:900px;margin-inline:auto}
 .solution-card,.info-card{position:relative;background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;box-shadow:0 8px 24px rgba(0,0,0,.04)}
 .card-image{height:190px;background-size:cover;background-position:center}
-.solar-image{background-image:url("../assets/images/solarcharger.jpeg")}
-.ev-image{background-image:url("https://images.unsplash.com/photo-1619767886558-efdc259cde1a?auto=format&fit=crop&w=1200&q=80")}
+.solar-image{
+  background-image:url("../images/projects/full/project-02.jpg");
+}
+.ev-image{
+  background-image:url("../images/solarcharger.jpeg");
+}
 .icon-badge{position:absolute;top:160px;left:50%;transform:translateX(-50%);width:58px;height:58px;border-radius:50%;display:grid;place-items:center;background:var(--gold);color:#fff;font-size:1.5rem;border:4px solid #fff}
 .card-body{padding:30px 22px 22px}
 .card-body p{font-size:.95rem}
@@ -106,6 +110,18 @@ p{color:var(--muted)}
 .hero-contact-page{background-image:linear-gradient(90deg,rgba(3,15,23,.92),rgba(3,15,23,.25)),url("https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=2200&q=85")}
 .info-card{padding-bottom:25px}
 .info-card .card-image{height:210px}
+/* Solar service images */
+.solar-roof{
+  background-image:url("../images/projects/full/project-02.jpg");
+}
+
+.commercial-solar{
+  background-image:url("../images/projects/full/project-05.jpg");
+}
+
+.solar-maintenance{
+  background-image:url("../images/projects/full/project-09.jpg");
+}
 .info-card h3,.info-card p{padding-inline:22px}
 .dark-section{background:var(--navy);color:#fff;padding:90px 0}
 .dark-section p{color:#c7d0d6}

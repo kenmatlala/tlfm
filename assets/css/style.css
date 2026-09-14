@@ -70,7 +70,7 @@ p{color:var(--muted)}
 .cards-2{grid-template-columns:repeat(2,1fr);max-width:900px;margin-inline:auto}
 .solution-card,.info-card{position:relative;background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;box-shadow:0 8px 24px rgba(0,0,0,.04)}
 .card-image{height:190px;background-size:cover;background-position:center}
-.solar-image{background-image:url("../assets/images/projects/solarcharger.jpeg")}
+.solar-image{background-image:url("../assets/images/solarcharger.jpeg")}
 .ev-image{background-image:url("https://images.unsplash.com/photo-1619767886558-efdc259cde1a?auto=format&fit=crop&w=1200&q=80")}
 .icon-badge{position:absolute;top:160px;left:50%;transform:translateX(-50%);width:58px;height:58px;border-radius:50%;display:grid;place-items:center;background:var(--gold);color:#fff;font-size:1.5rem;border:4px solid #fff}
 .card-body{padding:30px 22px 22px}
